@@ -4,6 +4,8 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
+
+
 let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startGame);
@@ -82,25 +84,25 @@ const questions = [
 		answers: [ { text: '4', correct: true }, { text: '22', correct: false } ]
 	},
 	{
-		question: 'Who is the best YouTuber?',
+		question: 'Question 2 ',
 		answers: [
-			{ text: 'Web Dev Simplified', correct: true },
-			{ text: 'Traversy Media', correct: true },
-			{ text: 'Dev Ed', correct: true },
-			{ text: 'Fun Fun Function', correct: true }
+			{ text: 'A1', correct: true },
+			{ text: 'A2, correct: true },
+			{ text: 'Yes', correct: true },
+			{ text: 'Yes', correct: true }
 		]
 	},
 	{
-		question: 'Is web development fun?',
+		question: 'Question 3',
 		answers: [
-			{ text: 'Kinda', correct: false },
-			{ text: 'YES!!!', correct: true },
-			{ text: 'Um no', correct: false },
-			{ text: 'IDK', correct: false }
+			{ text: 'Yoshi', correct: false },
+			{ text: 'Mario', correct: true },
+			{ text: 'Wario', correct: false },
+			{ text: 'Luigi', correct: false }
 		]
 	},
 	{
-		question: 'What is 4 * 2?',
-		answers: [ { text: '6', correct: false }, { text: '8', correct: true } ]
+		question: 'True or False',
+		answers: [ { text: 'True', correct: false }, { text: 'False', correct: true } ]
 	}
 ];
