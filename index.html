@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homework 4 Quiz</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <!-- Intial Container with simple layout of possible code -->
     <div class="container">
-        <div id="question-container" class="hide"> </div>
-        <div class="controls"> </div>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn"> Answer 1</button>
+                <button class="btn"> Answer 2</button>
+                <button class="btn"> Answer 3</button>
+                <button class="btn"> Answer 4</button>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
         <button id="start-btn" class="start-btn btn"> Start </button>
         <button id="next-btn" class="next-btn btn hide"> Next</button>
-
+    </div>
     </div>
 
     <!-- Psuedo Code and brain storm area -->
     <!-- 1. Create a Start button so when I click it the timer counts down -->
     <!-- 2. Create 4 button classes and 5 sets of questions to place Question 1,2,3,4 -->
     <!-- 3. Create Criteria for correct and wrong answers -->
-    <!--4. Once the quiz is over be able to save the answers and intials.   --> 
+    <!--4. Once the quiz is over be able to save the answers and intials.   -->
 
 
 
