@@ -4,8 +4,6 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
-
-
 let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startGame);
@@ -59,7 +57,7 @@ function selectAnswer(e) {
 	if (shuffledQuestions.length > currentQuestionIndex + 1) {
 		nextButton.classList.remove('hide');
 	} else {
-		startButton.innerText = 'Restart';
+		startButton.innerText = 'Quiz Over! Enter Intials';
 		startButton.classList.remove('hide');
 	}
 }
@@ -84,12 +82,12 @@ const questions = [
 		answers: [ { text: '4', correct: true }, { text: '22', correct: false } ]
 	},
 	{
-		question: 'Question 2 ',
+		question: 'Commonly used data types DO NOT include:',
 		answers: [
-			{ text: 'A1', correct: true },
-			{ text: 'A2, correct: true },
-			{ text: 'Yes', correct: true },
-			{ text: 'Yes', correct: true }
+			{ text: 'strings', correct: true },
+			{ text: 'booleans', correct: true },
+			{ text: 'alerts', correct: true },
+			{ text: 'numbers', correct: true }
 		]
 	},
 	{

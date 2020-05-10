@@ -2,11 +2,11 @@
 *::before,
 *::after {
 	box-sizing: border-box;
-	font-family: 'Franklin Gothic Medium';
+	font-family: 'Arial';
 }
 
 :root {
-	--hue-neutral: 200;
+	--hue-neutral: rgb(111, 145, 219);
 	--hue-wrong: 0;
 	--hue-correct: 145;
 }
@@ -21,6 +21,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: hsl(var(--hue), 100%, 20%);
+	
 }
 
 body.correct {
@@ -34,10 +35,11 @@ body.wrong {
 .container {
 	width: 800px;
 	max-width: width 80%;
-	background-color: white;
+	background-color: rgb(56, 86, 185);
 	border-radius: 5px;
 	padding: 10px;
 	box-shadow: 0 0 10px 2px;
+	color: white;
 }
 
 .btn-grid {
@@ -49,12 +51,13 @@ body.wrong {
 
 .btn {
 	--hue: var(--hue-neutral);
-	border: 1px solid hsl(var(--hue), 100%, 30%);
-	background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+	background-color: rgb(9, 27, 134);
 	border-radius: 5px;
 	padding: 5px 10px;
 	color: white;
-	outline: none;
+    outline: none;
+    font-size: larger;
 }
 
 .btn:hover {
@@ -63,7 +66,7 @@ body.wrong {
 
 .btn.correct {
 	--hue: var(--hue-correct);
-	color: black;
+	color: white;
 }
 
 .btn.wrong {
@@ -83,6 +86,13 @@ body.wrong {
 	align-items: center;
 }
 
+.welcome {
+	border-color: black;
+}
+
+.containerWelcome {
+	color: black;
+}
 .hide {
 	display: none;
 }
