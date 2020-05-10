@@ -5,6 +5,8 @@ const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
 let shuffledQuestions, currentQuestionIndex;
+let timerEl = document.querySelector('timer');
+let timer = 60;
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
@@ -16,9 +18,19 @@ function startGame() {
 	startButton.classList.add('hide');
 	shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 	currentQuestionIndex = 0;
+	score = 0;
+	timer = 60;
 	questionContainerElement.classList.remove('hide');
 	setNextQuestion();
 }
+
+var time = setInterval(function() {
+	timer = timer - 1;
+	if (timer === 0) {
+		clearInterval(time);
+		indexArray++;
+	}
+}, 1000);
 
 function setNextQuestion() {
 	resetState();
@@ -78,8 +90,8 @@ function clearStatusClass(element) {
 
 const questions = [
 	{
-		question: 'What is 2 + 2?',
-		answers: [ { text: '4', correct: true }, { text: '22', correct: false } ]
+		question: 'How would you save a CSS file?',
+		answers: [ { text: 'style.css', correct: true }, { text: 'java.js', correct: false } ]
 	},
 	{
 		question: 'Commonly used data types DO NOT include:',
@@ -91,16 +103,16 @@ const questions = [
 		]
 	},
 	{
-		question: 'Question 3',
+		question: 'How do you create a function in JavaScript?',
 		answers: [
-			{ text: 'Yoshi', correct: false },
-			{ text: 'Mario', correct: true },
-			{ text: 'Wario', correct: false },
-			{ text: 'Luigi', correct: false }
+			{ text: 'Function:myFunction()', correct: false },
+			{ text: 'function myFunction()', correct: true },
+			{ text: 'function = myFunction()', correct: false },
+			{ text: 'None of the above', correct: false }
 		]
 	},
 	{
-		question: 'True or False',
+		question: 'Booleans has more than 3 options',
 		answers: [ { text: 'True', correct: false }, { text: 'False', correct: true } ]
 	}
 ];
