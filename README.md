@@ -6,9 +6,7 @@ Create a Javascript quiz
 
 
 ## Summary
-
-Back end and front application to track and add burgers eaten. Uses node,inquirer, and MySQL
-https://eatdaburger2305.herokuapp.com/
+Simple Javascript app that quizes the user. 
  
 ## User Story
 ```sh
@@ -17,9 +15,7 @@ AS a TEACHER,
 I WANT to quiz students
 
 ```
-![screenshot1](/screenshot/Screenshot%201.png)
 
-![screenshot1](views/assets/img/burger.png)
 
 ## How to use the Application
 
