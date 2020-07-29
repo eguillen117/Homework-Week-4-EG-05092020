@@ -4,30 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="style.css" rel="stylesheet">
+    <meta name=content="JavaScript Quiz">
+    <title>Javascript Quiz</title>
 
-    </href>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script defer src="script.js"></script>
-    <title>Homework 4 Quiz</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.jpg" type="image/x-icon">
 
 </head>
+<!-- END OF HEAD ============================================ -->
+
+<header class="d-flex p-3 justify-content-between font-weight-bolder">
+    <button type="button" id="view-scores-id" class="btn score text-info font-weight-bolder shadow-xl p-2">View
+        Highscores</button>
+    <div class="timer text-muted">Time: <span id="count">0</span></div>
+</header>
+
 
 <body>
-    <div class="timer"> Time: <span id"timer">60</span></div>
 
-    <div class="header">
-        <h3> Welcome to my incomplete Quiz :( It's a nightmare :(</h3>
-        <h5> Like my wise uncle once said "It is... what it is"</h5>
-    </div>
+    <section id="welcome-modal" class="justify-content-center">
+        <!-- welcome page section -->
+        <article class="text-center">
+            <h2 class="text-info">Welcome to the Javascript Quiz!</h2>
+            <p class="text-justify text-muted mt-5 text-center"></p>
+            <p class="text-justify text-muted text-center">You have 60 seconds to answer all the questions.
+                For every wrong answer time will be deducted.</p>
+            <div class="text-muted font-weight-bolder font-italic">Click "Start" below to begin.</div>
+
+        </article>
+    </section>
 
 
     <div class="container">
         <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 1 </button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>

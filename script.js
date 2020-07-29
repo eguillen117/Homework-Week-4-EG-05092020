@@ -5,8 +5,6 @@ const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
 let shuffledQuestions, currentQuestionIndex;
-let timerEl = document.querySelector('timer');
-let timer = 60;
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
@@ -18,19 +16,9 @@ function startGame() {
 	startButton.classList.add('hide');
 	shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 	currentQuestionIndex = 0;
-	score = 0;
-	timer = 60;
 	questionContainerElement.classList.remove('hide');
 	setNextQuestion();
 }
-
-var time = setInterval(function() {
-	timer = timer - 1;
-	if (timer === 0) {
-		clearInterval(time);
-		indexArray++;
-	}
-}, 1000);
 
 function setNextQuestion() {
 	resetState();
@@ -69,7 +57,7 @@ function selectAnswer(e) {
 	if (shuffledQuestions.length > currentQuestionIndex + 1) {
 		nextButton.classList.remove('hide');
 	} else {
-		startButton.innerText = 'Quiz Over! Enter Intials';
+		startButton.innerText = 'Restart';
 		startButton.classList.remove('hide');
 	}
 }
@@ -87,7 +75,6 @@ function clearStatusClass(element) {
 	element.classList.remove('correct');
 	element.classList.remove('wrong');
 }
-
 const questions = [
 	{
 		question: 'How would you save a CSS file?',
@@ -116,3 +103,8 @@ const questions = [
 		answers: [ { text: 'True', correct: false }, { text: 'False', correct: true } ]
 	}
 ];
+
+var userHighScore = [];
+if (localStorage.getItem('userHighScores') !== null) {
+	userHighScores = JSON.parse(localStorage.getItem('userHighScores'));
+}
