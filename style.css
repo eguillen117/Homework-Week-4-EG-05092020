@@ -16,7 +16,18 @@ body {
 	height: 100%;
 }
 
+.container{
+	font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: white;
+  box-shadow:0 0 10px 2px;
 
+ 
+}
+/* 
 .container {
 	font-size: 30px;
 	width: 700px;
@@ -27,7 +38,7 @@ body {
 	margin-top: 200px;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
 .btn-grid {
 	display: grid;
