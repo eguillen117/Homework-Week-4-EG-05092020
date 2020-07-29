@@ -2,7 +2,7 @@
 Create a Javascript quiz
  
 [![Javascript](https://img.shields.io/badge/Javascript-JS-blue.svg)](https://www.w3schools.com/Js/)
-[![Node.js](https://img.shields.io/badge/Node.js-Node-green.svg)](https://nodejs.org/en/)
+[![Node.js](https://img.shields.io/badge/Herokus-Heroku-green.svg)](https://nodejs.org/en/)
 
 
 ## Summary
