@@ -16,22 +16,17 @@ body {
 	height: 100%;
 }
 
-body.correct {
-	--hue: var(--hue-correct);
-}
-
-body.wrong {
-	--hue: var(--hue-wrong);
-}
 
 .container {
 	font-size: 30px;
-	width: 800px;
+	width: 700px;
 	max-width: 80%;
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 0 0 10px 2px;
 	margin-top: 200px;
+	justify-content: center;
+	align-items: center;
 }
 
 .btn-grid {
